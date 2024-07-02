@@ -132,4 +132,8 @@ class Headers extends Component
 
         return $nonce;
     }
+
+    public function getNonce(string $type) {
+        return $this->nonces[$type]?? [];
+    }
 }
